@@ -1,4 +1,4 @@
-import {input, print} from '../../io_utils.js'
+import { input, print } from '../../io_utils.js'
 
 function main(){
     // Entrada
