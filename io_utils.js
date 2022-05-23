@@ -1,7 +1,7 @@
 import prompt from 'prompt-sync'
 
 export const input = prompt({
-    sigint: false
+    sigint: true
 })
 
 export function print(mensagem, ...optionalParams){
