@@ -146,4 +146,20 @@ function uses_only(word, mandatory_letters){
     return true
 }
 
+function uses_only2(word, mandatory_letters){
+    for (let letter of mandatory_letters){
+        let use = false
+        for (let character of word){ 
+            if (character === letter){
+                use = true
+            }
+        }
+        if (!use){
+            return false
+        }
+    }
+
+    return true
+}
+
 main()
