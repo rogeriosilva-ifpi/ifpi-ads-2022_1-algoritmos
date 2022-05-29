@@ -1,0 +1,5 @@
+Igor Julliano;5.5;8.0;10.0;22/90
+Rogerio Silva;7.0;8.0;6.0;11/90
+Kelson Eduardo;5.5;6.0;7.0;26/90
+Mariana William;9.5;8.0;9.0;5/90
+Romero Antônio;3.0;5.0;1.0;10/90
