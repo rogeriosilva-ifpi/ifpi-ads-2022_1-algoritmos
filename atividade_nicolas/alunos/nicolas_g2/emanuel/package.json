@@ -1,0 +1,10 @@
+{
+    "name": "ifpi-ads-2022_1-algoritmos",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "prompt-sync": "^4.2.0"
+    }
+}
