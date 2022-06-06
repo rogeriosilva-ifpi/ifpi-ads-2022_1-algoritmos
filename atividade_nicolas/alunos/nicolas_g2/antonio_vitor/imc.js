@@ -1,10 +1,10 @@
-import {print, input} from './io_utils.js'
+import { input } from './io_utils.js'
 
 function main(){
 
-    const peso = Number (input('A massa de Joaquim é:')
+    const peso = Number (input('A massa de Joaquim é:'))
     const altura = Number (input('A altura de Joaquim é:')
-    const IMC = (peso/(altura*altura)
+    const IMC = (peso/(altura*altura))
     
     console.log('O IMC é igual a:'${IMC}.toFixed[2])
 

@@ -1,6 +1,8 @@
 import prompt from 'prompt-sync'
 const input = prompt({sigint:false})
 
+// 80% faltou mostrar em que faixa o cara está neste momento
+
 function main(){
     console.log("VAMOS CALCULAR A FREQUÊNCIA CARDÍACA MÁXIMA")
     const idade = Number(input("Informe a sua idade: "))

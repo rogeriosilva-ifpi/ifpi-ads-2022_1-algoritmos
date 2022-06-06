@@ -1,5 +1,6 @@
 import prompt from 'prompt-sync'
 const input = prompt({sigint:false})
+// Taxa de Juros depende da SELIC
 
 function main(){
     const rendaMensal = Number(input("Informe sua renda mensal: "))

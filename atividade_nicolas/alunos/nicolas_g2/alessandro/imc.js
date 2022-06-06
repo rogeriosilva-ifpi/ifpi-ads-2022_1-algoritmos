@@ -1,4 +1,4 @@
-import prompt from 'prompt-sync'
+import prompt from 'prompt-sync';
 const input = prompt()
 
 function main() {
@@ -9,10 +9,10 @@ function main() {
     var altura = Number(input('Digite o valor da altura: '));
 
     // Cálculo do IMC e do peso (p) para se chegar ao IMC padrão:
-
+    
     let imc = peso / (altura * altura);
     console.log(`O IMC do Joaquim é: ${imc.toFixed(2)}.`);
-    const p = imc * altura
+    const p = imc * altura // Aqui vc deve ver qual o IMC ideal e multiplica pelo quadrado da latura
 
     // Julgar se é preciso aumentar ou diminuir o peso com base no IMC:
 
