@@ -28,7 +28,7 @@ function main(){
 
         calorias_diarias = Number(input('Calorias diárias: '))
         deficit_calorico = kilos * 7000
-        const defict_diario = deficit_calorico / 23
+        const defict_diario = deficit_calorico / 23 * 3
         const sabados = defict_diario / 2
 
         console.log(`Você deverá gastar ${defict_diario} calorias em dias úteis além do normal`)
