@@ -51,16 +51,30 @@ function dobra_valores_do_vetor(vetor){
 }
 
 export function dobrar_valores_matriz(matriz){
-    // const matriz2 = copiar_matriz(matriz)
-    // for (let i = 0; i < matriz.length; i++){
-    //     for (let j = 0; j < matriz[i].length; j++){
-    //         matriz2[i][j] = matriz[i][j] * 2
-    //     }
-    // }
-    // const matriz2 = map_vetor(matriz, dobra_valores_do_vetor)
+    // V1: sem uso de map
+    /* 
+    const matriz2 = copiar_matriz(matriz)
+    for (let i = 0; i < matriz.length; i++){
+        for (let j = 0; j < matriz[i].length; j++){
+            matriz2[i][j] = matriz[i][j] * 2
+        }
+    }
+    */
 
+    // V2: uso do nosso map_vetor com funções "ao vivo" (arrow/seta)
+    /* 
+    const matriz2 = map_vetor(matriz, vetor => map_vetor(vetor, valor => valor*2)) 
+    */
 
-    return map_vetor(matriz, (vetor) => map_vetor(vetor, valor=> valor *2))
+    // V3: uso do nosso map_vetor porém com funções declaradas separadamente
+    /* 
+    const matriz2 = map_vetor(matriz, dobra_valores_do_vetor) 
+    */
+
+    // V4: uso do método map interno de Javascript
+    const matriz2 = matriz.map(vetor => vetor.map(valor => valor * 2))
+
+    return matriz2
 }
 
 export function copiar_matriz(matriz){
