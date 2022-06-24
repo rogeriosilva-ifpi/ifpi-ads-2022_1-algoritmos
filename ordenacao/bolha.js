@@ -1,13 +1,13 @@
 function main(){
 
-    // let vetor = [8, 0, -1, 11, 18, 2, 5, 9, 20]
+    let vetor = [8, 0, -1, 11, 18, 2, 5, 9, 20]
 
-    let vetor = [ -1,  0,  2,  5, 8, 9, 11, 18, 20 ]
+    // let vetor = [ -1,  0,  2,  5, 8, 9, 11, 18, 20 ]
       
 
     console.log(vetor)
 
-    let vetor_ordenado = ordenar_vetor_bubble(vetor, 'dsc')
+    let vetor_ordenado = ordenar_vetor_bubble(vetor)
 
     console.log(vetor_ordenado)
 }
@@ -32,9 +32,12 @@ function ordenar_vetor_bubble(vetor, ordem = 'asc'){
                 auxiliar = vetor[j]
                 vetor[j] = vetor[j + 1]
                 vetor[j + 1] = auxiliar
+                console.log(vetor)
             }
-        }
 
+
+        }
+        console.log('-------')
         if(!houveTroca){
             break
         }
