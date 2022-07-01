@@ -26,7 +26,8 @@ export function preencher_matriz_automaticamente(matriz, valor_padrao){
     return matriz
 }
 
-export function show_matriz(matriz){
+export function show_colecao(matriz, title = 'Dados'){
+    console.log(`##### - ${title} - #####`)
     console.table(matriz)
 }
 
