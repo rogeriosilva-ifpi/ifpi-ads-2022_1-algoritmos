@@ -2,7 +2,7 @@ import {
     dobrar_valores_matriz,
     nova_matriz,
     preencher_matriz_automaticamente,
-    show_matriz,
+    show_colecao,
     soma_itens_matriz
 } from './matriz_utils.js'
 
@@ -14,7 +14,7 @@ function main(){
 
     matriz = preencher_matriz_automaticamente(matriz)
 
-    show_matriz(matriz)
+    show_colecao(matriz)
 
     const somatorio_itens = soma_itens_matriz(matriz)
 
@@ -23,7 +23,7 @@ function main(){
     const matriz_valores_dobrados = dobrar_valores_matriz(matriz)
 
     console.log('Matriz com valores dobrados')
-    show_matriz(matriz_valores_dobrados)
+    show_colecao(matriz_valores_dobrados)
 
     /*
     const matriz_copiada = copiar_matriz(matriz)
